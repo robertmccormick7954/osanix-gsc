@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Osanix — GSC Submission List</title>
+<style>
+  :root{--bg:#0f141b;--card:#171f29;--card2:#1e2833;--line:#2a3846;--ink:#e8eef4;--dim:#93a4b5;--brand:#3a91c7;--pink:#ef5aa0;--grn:#28c081}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:720px;margin:0 auto;padding:26px 16px 60px}
+  h1{font-size:23px;margin:0 0 4px;letter-spacing:-.02em}
+  .mk{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#22557a,#14324a);color:#fff;font-weight:900;font-size:14px;vertical-align:middle;margin-right:8px}
+  .mk i{color:var(--pink);font-style:normal}
+  p.sub{color:var(--dim);margin:0 0 22px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px;margin:0 0 18px}
+  .card h2{font-size:15px;margin:0 0 3px;display:flex;align-items:center;gap:8px}
+  .step{width:22px;height:22px;border-radius:50%;background:var(--brand);color:#fff;display:inline-grid;place-items:center;font-size:12px;font-weight:800;flex:0 0 auto}
+  .card .hint{color:var(--dim);font-size:13.5px;margin:0 0 12px}
+  .row{display:flex;align-items:center;gap:10px;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:9px 10px 9px 13px;margin:7px 0}
+  .row code{font:13.5px/1.4 ui-monospace,Menlo,Consolas,monospace;color:var(--ink);word-break:break-all;flex:1}
+  .row .tier{font-size:10.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;margin-right:2px}
+  button.copy{flex:0 0 auto;background:var(--brand);color:#fff;border:0;border-radius:8px;padding:8px 14px;font-weight:700;font-size:13px;cursor:pointer;transition:.15s;white-space:nowrap}
+  button.copy:hover{filter:brightness(1.1)}
+  button.copy.ok{background:var(--grn)}
+  .copyall{width:100%;justify-content:center;font-size:15px;padding:14px;margin-top:6px;display:flex;align-items:center;gap:8px}
+  .group-label{font-size:12px;color:var(--dim);text-transform:uppercase;letter-spacing:.09em;margin:14px 0 2px}
+  .foot{color:var(--dim);font-size:13px;margin-top:22px;text-align:center;line-height:1.7}
+  .foot b{color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1><span class="mk">O<i>x</i></span> Osanix — GSC submission list</h1>
+  <p class="sub">Everything to paste into Google Search Console. Tap <b>Copy</b> on any row.</p>
+
+  <div class="card">
+    <h2><span class="step">1</span> Sitemap</h2>
+    <p class="hint">GSC → left menu → <b>Sitemaps</b> → paste this → Submit. (Adds all 12 pages at once.)</p>
+    <div class="row"><code id="sm">https://osanix.shop/sitemap.xml</code><button class="copy" data-copy="sm">Copy</button></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="step">2</span> Request indexing — 12 pages</h2>
+    <p class="hint">GSC → top search bar (<b>URL Inspection</b>) → paste a URL → <b>Request Indexing</b>. One at a time (~10–15/day). Do them top to bottom.</p>
+
+    <div class="group-label">Homepages — do first (today)</div>
+    <div class="row"><span class="tier">UK</span><code>https://osanix.shop/</code><button class="copy" data-t="https://osanix.shop/">Copy</button></div>
+    <div class="row"><span class="tier">DE</span><code>https://osanix.shop/de/</code><button class="copy" data-t="https://osanix.shop/de/">Copy</button></div>
+    <div class="row"><span class="tier">DK</span><code>https://osanix.shop/da/</code><button class="copy" data-t="https://osanix.shop/da/">Copy</button></div>
+    <div class="row"><span class="tier">NL</span><code>https://osanix.shop/nl/</code><button class="copy" data-t="https://osanix.shop/nl/">Copy</button></div>
+
+    <div class="group-label">Buy pages — do today</div>
+    <div class="row"><span class="tier">UK</span><code>https://osanix.shop/buy/</code><button class="copy" data-t="https://osanix.shop/buy/">Copy</button></div>
+    <div class="row"><span class="tier">DE</span><code>https://osanix.shop/de/kaufen/</code><button class="copy" data-t="https://osanix.shop/de/kaufen/">Copy</button></div>
+    <div class="row"><span class="tier">DK</span><code>https://osanix.shop/da/koeb/</code><button class="copy" data-t="https://osanix.shop/da/koeb/">Copy</button></div>
+    <div class="row"><span class="tier">NL</span><code>https://osanix.shop/nl/kopen/</code><button class="copy" data-t="https://osanix.shop/nl/kopen/">Copy</button></div>
+
+    <div class="group-label">Review pages — do tomorrow (quota)</div>
+    <div class="row"><span class="tier">UK</span><code>https://osanix.shop/reviews/</code><button class="copy" data-t="https://osanix.shop/reviews/">Copy</button></div>
+    <div class="row"><span class="tier">DE</span><code>https://osanix.shop/de/erfahrungen/</code><button class="copy" data-t="https://osanix.shop/de/erfahrungen/">Copy</button></div>
+    <div class="row"><span class="tier">DK</span><code>https://osanix.shop/da/anmeldelser/</code><button class="copy" data-t="https://osanix.shop/da/anmeldelser/">Copy</button></div>
+    <div class="row"><span class="tier">NL</span><code>https://osanix.shop/nl/ervaringen/</code><button class="copy" data-t="https://osanix.shop/nl/ervaringen/">Copy</button></div>
+
+    <button class="copy copyall" id="all">📋 Copy all 12 URLs</button>
+  </div>
+
+  <p class="foot">Legal pages &amp; the <b>/go/</b> redirectors are intentionally left out (they're noindex).<br>
+  Some pages may show <b>"Discovered — not indexed"</b> at first — normal for a new domain; it clears over the coming days.</p>
+</div>
+
+<textarea id="scratch" style="position:absolute;left:-9999px;top:-9999px" aria-hidden="true"></textarea>
+<script>
+(function(){
+  var ALL = Array.prototype.map.call(document.querySelectorAll("button.copy[data-t]"), function(b){ return b.getAttribute("data-t"); });
+
+  function copyText(txt){
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      return navigator.clipboard.writeText(txt).catch(function(){ return legacy(txt); });
+    }
+    return legacy(txt);
+  }
+  function legacy(txt){
+    return new Promise(function(res, rej){
+      var ta = document.getElementById("scratch");
+      ta.value = txt; ta.focus(); ta.select();
+      try { document.execCommand("copy") ? res() : rej(); } catch(e){ rej(e); }
+      ta.blur();
+    });
+  }
+  function flash(btn, label){
+    var orig = btn.getAttribute("data-orig") || btn.textContent;
+    btn.setAttribute("data-orig", orig);
+    btn.textContent = label || "✓ Copied"; btn.classList.add("ok");
+    setTimeout(function(){ btn.textContent = orig; btn.classList.remove("ok"); }, 1400);
+  }
+
+  document.addEventListener("click", function(e){
+    var b = e.target.closest("button.copy"); if(!b) return;
+    if (b.id === "all"){ copyText(ALL.join("\n")).then(function(){ flash(b, "✓ All 12 copied"); }); return; }
+    var t = b.getAttribute("data-t");
+    if (!t){ var id = b.getAttribute("data-copy"); t = document.getElementById(id).textContent.trim(); }
+    copyText(t).then(function(){ flash(b); });
+  });
+})();
+</script>
+</body>
+</html>
